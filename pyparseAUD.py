@@ -18,11 +18,11 @@ def downloadYouTube(videourl, path, cnt):
 
 
 
-filepath = 'thewall.txt'
+filepath = 'playlistLinks.txt'
 with open(filepath) as fp:  
 	line = fp.readline()
 	cnt = 1
 	while line:
 		line = fp.readline()
-		downloadYouTube('{}'.format(line.strip()), './test', cnt)
+		downloadYouTube('{}'.format(line.strip()), './Directory', cnt)
 		cnt += 1
