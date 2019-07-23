@@ -17,7 +17,7 @@ def downloadYouTube(videourl, path, cnt):
 		print("ERROR: ", e)
 
 filepath = 'playlistLinks'
-with open(filepath) as fp:  
+with open(filepath) as fp:
 	line = fp.readline()
 	cnt = 1
 	while line:
