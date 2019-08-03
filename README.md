@@ -16,3 +16,6 @@ Step 2: Once you have the list edit the code and change line 21 to give the file
 Step 3: Change the download directory on line 27 to wherever you desire.
 
 Step 4: Run the code.
+NOTE:use ffmpeg tocombine vid and aud streams
+ffmpeg -i video.mp4 -i audio.mp4 \
+-c:v copy -c:a aac -strict experimental output.mp4
